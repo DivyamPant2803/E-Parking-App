@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LogoutActivity"
+    android:id="@+id/logoutLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/verifyCode"
+            android:hint="Unique ID"
+            android:textColorHint="@color/colorAmber_A400"
+            android:textColor="@color/colorAmber_A400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/verifyButton"
+            android:text="Verify"
+            android:background="@drawable/custom_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signOut"
+            android:text="Signout"
+            android:background="@drawable/custom_button"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
